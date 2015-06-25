@@ -1,11 +1,12 @@
 CC = gcc
-CFLAGS = -fpack-struct -I.
+SRC_DIR = ./src/
+CFLAGS = -fpack-struct -I. -I$(SRC_DIR)
 OBJ = main.o user.o status.o
-TARGET = AdhocSever
+TARGET = AdhocServer
 
 LIBS = -lsqlite3
 
-%.o: %.c
+%.o: $(SRC_DIR)%.c
 	$(CC) -c -o $@ $< $(CFLAGS)
 
 $(TARGET): $(OBJ)
