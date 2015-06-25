@@ -52,7 +52,10 @@ int main(int argc, char * argv[])
 {
 	// Result
 	int result = 0;
-	
+
+	// Don't buffer output to console
+	setbuf(stdout, NULL);
+
 	// Create Signal Receiver for CTRL + C
 	signal(SIGINT, interrupt);
 	
