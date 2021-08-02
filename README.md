@@ -1,7 +1,12 @@
-# ppspp-adhoc-server
-PPSPP AdhocServer source code from http://forums.ppsspp.org/showthread.php?tid=3595&pid=59021#pid59021
+# PPSPP Adhoc Server
 
-Credits for the original code go to Kyhel, from the PPSPP forums.
+```
+docker run --port 27312:27312 -it ghcr.io/souler/ppsspp-adhoc
+```
 
-## Compiling on Linux
-Don't forget to install *libsqlite3-dev* before running `make`
+## Contributors
+- @Kyhel for sharing the original PPSSPP AdhocServer source code on [the forums](http://forums.ppsspp.org/showthread.php?tid=3595&pid=59021#pid59021)
+
+
+## Building
+- Make sure you have installed the sqlite-dev dependencies.
